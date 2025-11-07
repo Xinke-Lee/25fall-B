@@ -1,0 +1,11 @@
+t = int(input())
+for _ in range(t):
+    n = int(input())
+    a = list(map(int, input().split()))
+    b = list(map(int, input().split()))
+    sum_a = sum(a)
+    sum_b = sum(b)
+    min_a = min(a)
+    min_b = min(b)
+    ans = min(sum_a + n * min_b, sum_b + n * min_a)
+    print(ans)
